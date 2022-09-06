@@ -1,0 +1,24 @@
+plugins {
+	id 'java'
+	id 'application'
+}
+
+group = 'com.vvs'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'com.github.docker-java:docker-java:3.2.13'
+	// implementation 'org.slf4j:slf4j-api:2.0.0'
+	// implementation 'org.slf4j:slf4j-nop:2.0.0'
+}
